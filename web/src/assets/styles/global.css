@@ -1,0 +1,70 @@
+/* Algumas variáveis de cor */
+:root {
+    font-size: 60%;
+
+    --color-background: #F0F0F7;
+    --color-primary-lighter: #1f455e;
+    --color-primary-light: #6ba2ea;
+    --color-primary: #3c3ff3;
+    --color-primary-dark: #020083;
+    --color-primary-darker: #5b15ff;
+    --color-secondary: #04D361;
+    --color-secondary-dark: #04BF58;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #D4C2FF;
+    --color-text-title: #32264D;
+    --color-text-complement: #9C98A6;
+    --color-text-base: #6A6180;
+    --color-line-in-white: #E6E6F0;
+    --color-input-background: #F8F8FC;
+    --color-button-text: #FFFFFF;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+}
+
+/* Configurando a página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurando a altura dos principais elementos de estrutura */
+html, body, #root {
+    height: 100vh;
+}
+
+/* Cor do fundo */
+body {
+    background: var(--color-background);
+}
+
+/* Alinhando o conteúdo */
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Definindo as fontes das letras
+* obtidas através de fonts.google.com
+* *rem é utilizado para criar aplicações responsivas
+*/
+body,
+input,
+button,
+textarea {
+    font: 500 1.6rem Poppins;
+    color: var(--color-text-base);
+}
+
+.container {
+    width: 90vw;
+    max-width: 700px;
+}
+
+@media (min-width: 700px) {
+    :root {
+        font-size:62.5%;
+    }
+}

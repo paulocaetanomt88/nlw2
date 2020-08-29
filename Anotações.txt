@@ -1,0 +1,23 @@
+Exemplos de Rotas
+http://localhost:3333/users
+http://localhost:3333/concacts
+
+Requisições
+GET: buscar ou listar uma informação
+POST: Criar alguma nova informação
+PUT: Atualizar uma informação
+DELETE: Deletar uma informação existente
+
+Corpo (Request Body): Dados para criação ou atualização de um registro
+Route Params: Identificar qual recurso eu quero atualizar ou deletar
+Query Params: Paginação, filtros, ordenação
+
+// Assistente de consultas SQL
+import knex from 'knex';
+
+// migrations - controlam a versão do banco de dados
+
+// utilitário para os caminhos de diretórios dentro da aplicação
+import path from 'path';
+
+// Knex ( useNullAsDefault: true, // utilize um caminho Null quando não conseguir definir um caminho padrão para o banco de dados )
